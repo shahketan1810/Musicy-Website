@@ -6,15 +6,19 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "ionic-youtube-search": "^1.2.0",
     "query-string": "^7.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-player": "^2.9.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-scroll-to-bottom": "^4.1.0",
     "socket.io-client": "^4.0.1",
-    "web-vitals": "^1.1.1"
+    "web-vitals": "^1.1.1",
+    "youtube-search-without-api-key": "^1.0.4"
   },
   "scripts": {
     "start": "react-scripts start",

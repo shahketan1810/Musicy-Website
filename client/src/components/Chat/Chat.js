@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import queryString from 'query-string';
 import io from "socket.io-client";
+import ReactPlayer from 'react-player'
 
 import TextContainer from '../TextContainer/TextContainer';
 import Messages from '../Messages/Messages';
@@ -18,6 +19,7 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState('');
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
+  const [songurl, setSongUrl] = useState('');
   const ENDPOINT = 'localhost:5000';
 
   useEffect(() => {
@@ -62,6 +64,7 @@ const Chat = ({ location }) => {
           <Input message={message} setMessage={setMessage} sendMessage={sendMessage} />
       </div>
       <TextContainer users={users}/>
+      <ReactPlayer url={songurl} playing="true" style={{display:'none'}}/>
     </div>
   );
 }

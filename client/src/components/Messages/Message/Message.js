@@ -4,6 +4,7 @@ import './Message.css';
 
 
 const Message = ({ message: { text, user }, name }) => {
+
   let isSentByCurrentUser = false;
   let isAdmin = false;
 
