@@ -1,5 +1,10 @@
+if (process.env.NODE_ENV !== "production"){
+  require('dotenv').config();
+}
+
 const http = require('http');
 const express = require('express');
+const axios = require('axios');
 
 const { addUser, removeUser, getUser, getUsersInRoom } = require('./users');
 
@@ -31,10 +36,30 @@ io.on('connect', (socket) => {
     callback();
   });
 
-  socket.on('sendMessage', (message, callback) => {
+  socket.on('sendMessage', async (message, callback) => {
     const user = getUser(socket.id);
-
-    io.to(user.room).emit('message', { user: user.name, text: message });
+    let song = '';
+    const setSong = (url) =>{
+      song = url;
+    }
+    if(message.length>6 && message[0]==='!' && message.slice(1,5)==='play'){
+      let songName;
+      songName = message.slice(6);
+      songName = songName.replace(' ','+');
+      const getURL = async()=>{
+        try{
+          let ans = await axios.get(`https://www.googleapis.com/youtube/v3/search?q=${songName}&key=${process.env.API_KEY}`);
+          let url = `https://www.youtube.com/watch?v=${ans.data.items[0].id.videoId}`;
+          setSong(url);
+        }
+        catch(e){
+          console.log(e);
+          return;
+        }
+      }
+      await getURL();
+    }
+    io.to(user.room).emit('message', { user: user.name, text: message, songLink: song});
 
     callback();
   });

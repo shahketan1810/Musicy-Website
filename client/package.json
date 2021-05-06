@@ -16,6 +16,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-scroll-to-bottom": "^4.1.0",
+    "react-youtube": "^7.13.1",
     "socket.io-client": "^4.0.1",
     "web-vitals": "^1.1.1",
     "youtube-search-without-api-key": "^1.0.4"
