@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {Redirect, BrowserRouter as Router} from 'react-router-dom';
+//import {Redirect, BrowserRouter as Router} from 'react-router-dom';
 import queryString from 'query-string';
 import io from "socket.io-client";
 import ReactPlayer from 'react-player'
@@ -34,9 +34,7 @@ const Chat = ({ location }) => {
 
     socket.emit('join', { name, room }, (error) => {
       if(error) {
-        <Router>
-          <Redirect to="/join" />
-        </Router>
+        window.location = `http://localhost:3000/join?room=${room}`;
       }
     });
   }, [ENDPOINT, location.search]);
