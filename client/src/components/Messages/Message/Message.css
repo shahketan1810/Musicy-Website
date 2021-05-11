@@ -9,19 +9,19 @@
 
 .messageText {
   width: 100%;
-  letter-spacing: 0;
+  letter-spacing: 0.5px;
   float: left;
-  font-size: 1.1em;
+  font-size: 1.5em;
   word-wrap: break-word;
 }
 
 .adminText{
   width: 100%;
   float: left;
-  font-size: 1.1em;
+  font-size: 1.5vw;
   font-family: Helvetica;
   color: #828282;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   word-wrap: break-word;
   text-align: center;
 }
@@ -50,6 +50,7 @@
   font-family: Helvetica;
   color: #828282;
   letter-spacing: 0.3px;
+  font-size: 1.5vw;
 }
 
 .pl-10 {
