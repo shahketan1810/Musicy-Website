@@ -3,15 +3,19 @@
     padding: 0;
     font-family: "montserrat",sans-serif;
   }
-.contact-section{
-    background: url("https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80") no-repeat center;
+
+body{
+  background: url("https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80") no-repeat center;
     background-size: cover;
     height: 100vh;
-    width: 100%;
-    padding: 40px 0;
-  }
+}
+
+.contact-section{
+  color: white;
+}
+
   .contact-section h1{
-    padding-top: 2%;
+    padding-top: 10%;
     text-align: center;
     color: #000;
     font-size: 50px;
@@ -23,6 +27,7 @@
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
+    font-size: 30px;
     padding-bottom: 2%;
   }
   
@@ -32,10 +37,10 @@
     box-sizing: border-box;
     margin: 16px 0;
     border: 0;
+    color: white;
     background: #111;
     padding: 20px 40px;
     outline: none;
-    color: #ddd;
     transition: 0.5s;
     padding-bottom: 2%;
   }
@@ -44,12 +49,13 @@
   }
   textarea.contact-form-text{
     resize: none;
-    height: 120px;
+    height: 120px
   }
   .contact-form-btn{
     float: right;
     border: 0;
     background: #34495e;
+    font-size: 20px;
     color: #fff;
     padding: 12px 50px;
     border-radius: 20px;
@@ -59,4 +65,13 @@
   }
   .contact-form-btn:hover{
     background: #2980b9;
+  }
+
+  ::placeholder{
+    padding-top: 2px;
+    font-size: 15px;
+  }
+
+  :focus{
+    color: white;
   }
