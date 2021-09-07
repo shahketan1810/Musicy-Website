@@ -34,7 +34,7 @@ const Chat = ({ location }) => {
 
     socket.emit('join', { name, room }, (error) => {
       if(error) {
-        window.location = `http://localhost:3000/join?room=${room}`;
+        window.location = `/join?room=${room}`;
       }
     });
   }, [ENDPOINT, location.search]);
