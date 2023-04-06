@@ -14,9 +14,9 @@ Live Link : https://musicy-app.herokuapp.com/
 ## Snapshots of the website
 <ul>
   <li><h4>Join Room Page</h4></li>
-  <kbd><img src="https://musicy-app.herokuapp.com/images/join.jpg" height="400px" width="700px"/></kbd>
+  <kbd><img src="https://raw.githubusercontent.com/shahketan1810/Musicy-Website/main/client/public/images/join.jpg" height="400px" width="700px"/></kbd>
   <li><h4>Chatting Page</h4></li> 
-  <kbd><img src="https://musicy-app.herokuapp.com/images/chatroom1.png" height="400px" width="700px"/></kbd>
+  <kbd><img src="https://raw.githubusercontent.com/shahketan1810/Musicy-Website/main/client/public/images/chatroom1.png" height="400px" width="700px"/></kbd>
   <li><h4>Playing Music</h4></li>
-  <kbd><img src="https://musicy-app.herokuapp.com/images/chatroom2.png" height="400px" width="700px"/></kbd>
+  <kbd><img src="https://raw.githubusercontent.com/shahketan1810/Musicy-Website/main/client/public/images/chatroom2.png" height="400px" width="700px"/></kbd>
 </ul>
